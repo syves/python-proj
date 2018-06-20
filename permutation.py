@@ -12,6 +12,7 @@
 
 def solution(nums):
     perm = 1
+    # a lazy sequence would be better
     for n in range(1, len(nums) + 1):
         if n not in set(nums):
             perm = -1
