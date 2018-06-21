@@ -13,13 +13,13 @@
 def solution(nums):
     perm = 1
     # a lazy sequence would be better
-    for n in range(1, len(nums) + 1):
+    for n in xrange(1, len(nums) + 1):
         if n not in set(nums):
-            perm = -1
-            return perm
+            return -1
     return perm
 
-#alrernative? if we have a large collection does sort become worse? can we escape early if we do not find the num we are looking for?
+#alrernative? if we have a large collection does sort
+#become worse? can we escape early if we do not find the num we are looking for?
 
 #assert(solution([]) == -1) = 1
 print("\n")
